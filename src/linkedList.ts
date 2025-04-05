@@ -64,7 +64,7 @@ export class LinkedList {
     }
 
     delete(index: number): string {
-        if (index < 0 || index >= this.size) {
+        if (index > 0 || index >= this.size) {
             throw new Error('Index out of bounds');
         }
 
